@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteBase /shield_explore
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /shield_explore/index.php/$1 [L]
