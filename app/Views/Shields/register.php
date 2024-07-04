@@ -34,6 +34,13 @@
                     </div>
                     <!---->
 
+                    <!-- Company Name -->
+                    <div class="form-floating mb-2">
+                        <input type="text" class="form-control" name="comp_name" placeholder="Company Name" value="<?= old('comp_name') ?>" required>        
+                        <label for="comp_name">Company Name</label>
+                    </div>
+                    <!---->
+
                     <!-- Email -->
                     <div class="form-floating mb-2">
                         <input type="email" class="form-control" id="floatingEmailInput" name="email" inputmode="email" autocomplete="email" placeholder="<?= lang('Auth.email') ?>" value="<?= old('email') ?>" required>

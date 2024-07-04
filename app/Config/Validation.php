@@ -55,6 +55,14 @@ class Validation extends BaseConfig
                 'is_unique' => 'Your company already have an account registered for this system'
             ]
         ],
+        'comp_name' => [
+            'label' => 'Company Name',
+            'rules' => [
+                'required',
+                'min_length[3]',
+                'max_length[255]',
+            ],
+        ],
         'username' => [
             'label' => 'Auth.username',
             'rules' => [
